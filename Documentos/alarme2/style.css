@@ -1,0 +1,118 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+    outline: none;
+    font-family: "Courier New", Courier, monospace;
+}
+
+body, html{
+    min-height: 100vh;
+    display: flex;
+    align-items: center; justify-content: center;
+    background-color: lightblue;
+
+
+}
+
+.container {
+    background-image: url(alarme2/imagens/imgdespertador.png);
+    background-position: center left;;
+    background-size: cover;
+    width: 450px;
+    height: 200px;
+
+
+}
+.container .alarm-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    right: 19,5%;
+    width: 470px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0 10px 25px rgb(110, 109, 109);
+    color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+}
+.container .alarm-container img{
+    margin-top: 20px;
+    max-width: 125px;
+
+}
+.alarm-container h1 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px rgb(169, 129, 174);
+    padding: 10px;
+    color: beige;
+}
+.container .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.content.disable {
+    cursor: no-drop;
+}
+
+.container .content .alarm-controls{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    
+}
+
+.content.disable .alarm-controls{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.container .content select {
+    margin: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: pink;
+}
+
+.container .content select option{
+    width: 100%;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    color: salmon; 
+
+}
+
+.container button{
+    width: 435px;
+    border: none;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 17px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgb(171, 138, 172);
+    color: black;
+    cursor: pointer;
+
+}
+
+
+
+
